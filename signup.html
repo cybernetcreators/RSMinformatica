@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar Conta</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/navbar.css" />
+  <link rel="stylesheet" href="./css/signup.css">
+  <link rel="stylesheet" href="./css/home.css">
+
+  <!--Bibliotecas-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header -->
+  <section class="section-header">
+    <header class="header">
+      <!-- Logo -->
+      <a href="./index.html" class="logo">
+        <h1>RSM Informática</h1>
+      </a>
+
+      <!-- Navbar -->
+      <nav class="navbar-pc">
+        <a href="./index.html">Inicio</a>
+        <a href="./servicos.html">Serviços</a>
+        <a href="./produtos.html">Produtos</a>
+        <a href="./contato.html">Contato</a>
+      </nav>
+
+      <!-- Navbar Mobile -->
+      <nav class="navbar navbar-mobile">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">RSM Informática</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item text">
+                  <a class="nav-link active" style="font-size: 1.4rem;" href="./index.html">Inicio</a>
+                  <a class="nav-link" style="font-size: 1.4rem;" href="./servicos.html">Serviços</a>
+                  <a class="nav-link" style="font-size: 1.4rem;" href="./produtos.html">Produtos</a>
+                  <div class="div-btn">
+                    <a href="./signup.html" class="btn-criar">Criar Conta</a>
+                    <a href="./login.html" class="btn-entrar">Entrar</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sign in / Sign up -->
+      <div class="btn-nav">
+        <a href="./signup.html" class="btn-navbar">Criar Conta</a>
+        <a href="./login.html" class="btn-navbar">Entrar</a>
+      </div>
+    </header>
+  </section>
+
+  <!-- Form Section -->
+  <section class="form-section">
+    <div class="form-container">
+
+      <!-- Title -->
+      <div class="form-title">
+        <h1>Criar Conta</h1>
+        <p>Crie uma conta para continuar</p>
+      </div>
+
+      <!-- Form -->
+      <div class="form-area">
+        <form class="form" method="post">
+          <div class="form-input">
+            <input type="text" placeholder="Nome" maxlength="40">
+          </div>
+          <div class="form-input">
+            <input type="email" placeholder="Email" maxlength="40">
+          </div>
+          <div class="form-input">
+            <input class="password-input" type="password" placeholder="Senha" maxlength="40">
+          </div>
+
+          <div class="btn-form">
+            <a href="./login.html">
+              <button type="submit" class="btn-submit">
+                <i class="fa-solid fa-user"></i>
+                Criar conta
+              </button>
+            </a>
+          </div>
+        </form>
+      </div>
+
+      <p class="login-link">
+        Já tem uma conta?
+        <a href="./login.html">Entrar</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="section-footer">
+    <footer class="footer">
+      <div class="pages">
+        <div class="item-pages">
+          <h1>Produtos</h1>
+          <a href="./servicos.html">Serviços</a>
+          <a href="./produtos.html">Produtos</a>
+        </div>
+
+        <div class="item-pages">
+          <h1>Suporte</h1>
+          <a href="./contato.html">Contato</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+
+      <div class="footer-newsletter">
+        <h1>Se inscreva no nosso newsletter:</h1>
+        <form action="">
+          <input type="email" placeholder="E-mail" />
+          <input type="submit" />
+        </form>
+      </div>
+
+      <div class="footer-social">
+        <h1>Redes Sociais</h1>
+        <div class="links">
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

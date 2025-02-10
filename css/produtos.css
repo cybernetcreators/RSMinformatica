@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
+  
+  .section-main {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .hero-container {
+    width: 100%;
+    padding: 15rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: black;
+  }
+  
+  .hero-container h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-container p {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: rgb(189, 189, 189);
+  }
+  
+  .hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .hero-button a {
+    font-size: 1.1rem;
+    padding: 0.4rem 1rem;
+    color: rgb(39, 39, 39);
+    font-weight: 500;
+    border-radius: 0.4rem;
+    text-decoration: none;
+    background-color: white;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .hero-button a:last-child {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+  }
+  
+  .hero-button a:hover {
+    background-color: rgba(255, 255, 255, 0.788);
+  }
+  
+  .hero-button a:last-child:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  
+/*ESTILO DOS BOTÕES*/
+.btn{
+    margin-top: 3rem;
+    color: #000000;
+    display: inline-block;
+    font-size: 1.4rem;
+    background: var(--main-color);
+    padding: 0.9rem 3rem;
+    cursor: pointer;
+    border-radius: 2rem;
+}
+ 
+ 
+/*PSEUDO CLASSE COM AS VARIÁVEIS DOS PADRÕES DE CORES*/
+:root{
+    --main-color: #828282;/*COR PRINCIPAL*/
+    --bg: #171717; /*COR DE FUNDO */
+    --bg-card: #ffffff; /*COR DE FUNDO DO CARD*/
+    --cor-border: 0.1rem solid rgba(0, 0, 0, 0.3);/*COR E ESTILO DA BORDA*/
+}
+
+.menu .container-menu{
+    display: grid;
+
+    /*DEFINIÇÃO DE LINHAS E COLUNAS. O AUTO-FIT: CRIA AUTOMÁTICAMENTE AS COLUNAS QUE CABERÃO DENTRO DO CONTAINER. DEFINIDO EM UM TAMANHO MÁXIMO DE 30REN E UM MÍNIMO DE 1 FRAÇÃO*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    
+    gap: 1.5rem;/*define os espaços (gutters) entre as linhas e colunas*/
+}
+
+.menu .container-menu .box{
+    padding: 3rem;
+    text-align: center;
+    border: var(--cor-border);
+    background-color: var(--bg-card);
+}
+
+.menu .container-menu .box img{
+    height: 18rem;
+    border-radius: 5%;
+}
+.menu .container-menu .box h3{
+color: #181818;
+font-size: 2rem;
+padding: 1rem ;
+}
+.menu .container-menu .box .price{
+color: #000000;
+font-size: 2.45rem;
+padding: 0.5rem 0;
+}
+.menu .container-menu .box .price span{
+font-size: 2.45rem;
+text-decoration: line-through; /*TACHADO*/
+font-weight: lighter;/*NEGRITO LEVE - COR SUAVE*/
+}
+.menu .container-menu .box:hover {
+background: #616161;
+}
+/*UTILIZANDO OUTRO PSEUDO CLASSE QUE TODO (*) O ELEMENTO FILHO (<) QUE ESTIVER DENTRO DA CLASSE BOX*/
+.menu .container-menu .box:hover > * {
+color: rgb(255, 245, 245);
+}

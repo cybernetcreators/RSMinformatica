@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/servicos.css" type="text/css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <title>Serviços - RSM</title>
+  </head>
+ 
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="stylesheet" href="./css/navbar.css" />
+
+  <!--Frameworks-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body">
+  <!-- Header -->
+  <section class="section-header">
+    <header class="header">
+      <!-- Logo -->
+      <a href="./index.html" class="logo">
+        <h1>RSM Informática</h1>
+      </a>
+
+      <!-- Navbar -->
+      <nav class="navbar-pc">
+        <a href="./index.html">Inicio</a>
+        <a href="./servicos.html" style="border-color: black">Serviços</a>
+        <a href="./produtos.html">Produtos</a>
+        <a href="./contato.html">Contato</a>
+      </nav>
+
+      <!-- Navbar Mobile -->
+      <nav class="navbar navbar-mobile">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">RSM Informática</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item text">
+                  <a class="nav-link active" style="font-size: 1.4rem;" href="./index.html">Inicio</a>
+                  <a class="nav-link" style="font-size: 1.4rem;" href="./servicos.html">Serviços</a>
+                  <a class="nav-link" style="font-size: 1.4rem;" href="./produtos.html">Produtos</a>
+                  <div class="div-btn">
+                    <a href="./signup.html" class="btn-criar">Criar Conta</a>
+                    <a href="./login.html" class="btn-entrar">Entrar</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sign in / Sign up -->
+      <div class="btn-nav">
+        <a href="./signup.html" class="btn-navbar">Criar Conta</a>
+        <a href="./login.html" class="btn-navbar">Entrar</a>
+      </div>
+    </header>
+  </section>
+
+
+
+    <section class="services">
+      <div class="container">
+        <h2>Confira nossos serviços e preços</h2>
+        <br /><br /><br />
+        <div class="service-list">
+          <!-- Serviço 1 -->
+          <div class="service-item">
+            <h3>Formatação Normal</h3>
+            <p class="price">R$ 70,00</p>
+            <p>
+              Realizamos a formatação do seu computador de forma rápida e
+              eficiente, deixando seu dispositivo funcionando como novo. Ideal
+              para quem deseja melhorar o desempenho do seu computador.
+            </p>
+            <a href="agendar_servico.html" class="btn-agendar">Agendar</a>
+          </div>
+          <!-- Serviço 2 -->
+          <div class="service-item">
+            <h3>Formatação com Backup</h3>
+            <p class="price">R$ 100,00</p>
+            <p>
+              Além da formatação, realizamos o backup dos seus arquivos
+              importantes antes do serviço, garantindo a segurança dos dados.
+              Perfeito para quem precisa de um serviço completo e seguro.
+            </p>
+            <a href="agendar_servico.html" class="btn-agendar">Agendar</a>
+          </div>
+          <!-- Serviço 3 -->
+          <div class="service-item">
+            <h3>Recuperação de Placa Mãe (Desktop)</h3>
+            <p class="price">R$ 200,00</p>
+            <p>
+              Realizamos a recuperação da placa mãe do seu desktop, restaurando
+              o funcionamento do seu computador. Utilizamos técnicas avançadas
+              para garantir a qualidade do serviço.
+            </p>
+            <a href="agendar_servico.html" class="btn-agendar">Agendar</a>
+          </div>
+          <!-- Serviço 4 -->
+          <div class="service-item">
+            <h3>Recuperação de Placa Mãe (Notebook)</h3>
+            <p class="price">R$ 300,00</p>
+            <p>
+              Oferecemos a recuperação de placas mãe de notebooks, com técnicas
+              avançadas para resolver falhas e problemas críticos. Garantia de
+              um serviço seguro e eficaz.
+            </p>
+            <a href="agendar_servico.html" class="btn-agendar">Agendar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br /><br /><br /><br /><br /><br /><br />
+    <footer class="footer">
+      <div class="pages">
+        <div class="item-pages">
+          <h1>Produtos</h1>
+          <a href="./servicos.html">Serviços</a>
+          <a href="./produtos.html">Produtos</a>
+        </div>
+  
+        <div class="item-pages">
+          <h1>Suporte</h1>
+          <a href="./contato.html">Contato</a>
+          <a href="#">FAQ</a>
+        </div>
+      </div>
+  
+      <div class="footer-newsletter">
+        <h1>Se inscreva no nosso newsletter:</h1>
+        <form action="">
+          <input type="email" placeholder="E-mail" />
+          <input type="submit" />
+        </form>
+      </div>
+  
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
+</html>

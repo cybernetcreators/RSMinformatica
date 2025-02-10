@@ -1,0 +1,190 @@
+.section-header {
+  /* Properties */
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 1000;
+  padding: 0.5rem 5rem;
+
+  /* Style */
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+
+.section-header .header {
+  /* Properties */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.section-header .header .navbar-pc {
+  /* Properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.section-header .header .navbar-pc a {
+  /* Properties */
+  font-size: 1.1rem;
+  padding: 0.1rem 0;
+  transition: border 0.2s ease;
+
+  /* Style */
+  color: rgb(20, 20, 20);
+  background-color: transparent;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 0.15rem solid transparent;  
+}
+
+.section-header .header .navbar-pc a:hover {
+  /* Style */
+  border-color: rgb(20, 20, 20);
+}
+
+.section-header .header .logo {
+  /* Style */
+  text-decoration: none;
+}
+
+.section-header .header .logo h1 {
+  /* Properties */
+  margin-top: 0.5rem;
+  
+  /* Style */
+  font-size: 1.4rem;
+  text-align: center;
+  color: rgb(20, 20, 20);
+}
+
+.section-header .header .navbar-mobile {
+  /* Properties */
+  display: none;
+}
+
+.section-header .header .navbar-mobile .btn-criar {
+  /* Properties */
+  padding: 0.3rem 0.5rem;
+  transition: background-color 0.3s ease;
+
+  /* Style */
+  font-size: 1.15rem;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  border-color: black;
+  color: black;
+}
+
+.section-header .header .navbar-mobile .div-btn {
+  /* Properties */
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.section-header .header .navbar-mobile .btn-criar {
+  /* Properties */
+  width: 45%;
+  padding: 0.3rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+
+  /* Style */
+  font-size: 1.15rem;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  border-color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.section-header .header .navbar-mobile .btn-entrar {
+  /* Properties */
+  width: 45%;
+  padding: 0.3rem 2.3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+
+  /* Style */
+  font-size: 1.15rem;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  border-color: black;
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+.section-header .header .btn-nav {
+  /* Properties */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section-header .header .btn-nav .btn-navbar {
+  /* Properties */
+  padding: 0.3rem 0.5rem;
+  transition: background-color 0.3s ease;
+
+  /* Style */
+  font-size: 1.15rem;
+  text-decoration: none;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  border-color: black;
+  color: black;
+}
+
+.section-header .header .btn-nav .btn-navbar:hover {
+  /* Style */
+  background-color: rgb(235, 235, 235);
+}
+
+.section-header .header .btn-nav .btn-navbar:last-child {
+  /* Properties */
+  padding: 0.3rem 1.8rem;
+
+  /* Style */
+  background-color: black;
+  color: white;
+}
+
+.section-header .header .btn-nav .btn-navbar:last-child:hover {
+  /* Style */
+  background-color: rgb(31, 31, 31);
+}
+
+@media (max-width: 890px) {
+  .section-header .header .navbar-pc {
+    /* Properties */
+    display: none;
+  }
+
+  .section-header .header .navbar-mobile {
+    /* Properties */
+    display: block;
+  }
+
+  .section-header .header .btn-nav {
+    /* Properties */
+    display: none;
+  }
+}
